@@ -1,0 +1,54 @@
+/* General button styles */
+.btn {
+    font-size: 16px; /* Set font size for the buttons */
+    padding: 10px 20px; /* Add padding for a better click area */
+    border-radius: 5px; /* Round the corners of the buttons */
+    border: none; /* Remove default border */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition effects */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    margin: 5px; /* Add margin for spacing between buttons */
+}
+
+/* Flexbox container for buttons */
+.button-container {
+    display: flex; /* Use flexbox layout */
+    justify-content: center; /* Center buttons horizontally */
+    flex-wrap: wrap; /* Allow buttons to wrap on smaller screens */
+    margin: 20px 0; /* Add some margin above and below the button container */
+}
+
+/* Primary button styles */
+.btn-primary {
+    background-color: #007bff; /* Bootstrap primary color */
+    color: white; /* Text color for primary buttons */
+}
+
+/* Primary button hover effect */
+.btn-primary:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+    transform: translateY(-2px); /* Lift the button slightly */
+}
+
+/* Primary button active state */
+.btn-primary:active {
+    background-color: #004085; /* Even darker shade when clicked */
+    transform: translateY(0); /* Return to original position */
+}
+
+/* Focus styles for accessibility */
+.btn:focus {
+    outline: none; /* Remove outline on focus */
+}
+
+.btn:focus-visible {
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5); /* Visible outline for keyboard navigation */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .btn {
+        font-size: 14px; /* Adjust font size for smaller screens */
+        padding: 8px 16px; /* Reduce padding for mobile */
+    }
+}
